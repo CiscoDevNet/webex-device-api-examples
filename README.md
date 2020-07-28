@@ -17,3 +17,5 @@ Here you'll find scripts that illustrate how to use the [Devices](https://develo
 **example.js**: Enables signage and sets it to `nrk.no` for all devices with the tag `signage`.
 
 **bulk-patch.js**: Sets all specified configs on all of the devices that match the specified search criteria. Useful to bulk apply configurations to a large set of devices.
+
+**cloudxAPI-multiline-example.js** - Example of how to use Cloud xAPI to do a Multiline Command directly to the device using Webex Platform as a proxy
