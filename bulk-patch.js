@@ -61,8 +61,7 @@ const getDevices = (url, retries) => {
   return axios.get(url, searchConfig).then((result) => {
     console.log(`- Fetched ${url}`);
     if (result.headers.link) {
-      // Replace is to work around a bug in the webexapis link header
-      const link = parseLinkHeader(result.headers.link.replace(">", ">;"));
+      const link = parseLinkHeader(result.headers.link);
       return Promise.all([
         result.data.items,
         getDevices(link.next.url),
