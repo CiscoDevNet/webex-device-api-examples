@@ -1,4 +1,4 @@
-//Body for "https://webexapis.com/v1/xapi/command/SystemUnit.WelcomeBanner.Set"
+//NodeJS Example on how to post multiline commands to Webex Devices that allow cloud xapi commands"
 
 const axios = require("axios");
 
