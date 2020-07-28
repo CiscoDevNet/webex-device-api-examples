@@ -16,16 +16,16 @@ const jsonConfig = {
   },
 };
 
-const commandData = JSON.stringify([
+const commandData = JSON.stringify(
   {
 	"deviceId": `${DEVICE_ID}`,
 	"arguments": {
 	},
 	"body": "Webex Rooms Device\nAuthorised Access Only"
   },
-]);
+);
 
-axios.post('https://webexapis.com/v1/xapi/command/SystemUnit.WelcomeBanner.Set', jsonConfig, commandData)
+axios.post('https://webexapis.com/v1/xapi/command/SystemUnit.WelcomeBanner.Set', commandData, jsonConfig)
 .then((res) => {
   console.log(`statusCode: ${res.statusCode}`)
   console.log(res)
