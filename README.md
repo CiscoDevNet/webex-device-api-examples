@@ -14,7 +14,7 @@ Here you'll find scripts that illustrate how to use the [Devices](https://develo
 
 ## The scripts
 
-**example.js**: Enables signage and sets it to `nrk.no` for all devices with the tag `signage`.
+**bulk-signage-config-example.js**: Enables signage and sets it to `nrk.no` for all devices with the tag `signage`.
 
 **bulk-patch.js**: Sets all specified configs on all of the devices that match the specified search criteria. Useful to bulk apply configurations to a large set of devices.
 
