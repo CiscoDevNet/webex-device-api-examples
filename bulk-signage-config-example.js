@@ -48,7 +48,7 @@ axios
     for (let device of result.data.items) {
       axios
         .patch(
-          `https://webexapis.com/v1/deviceConfigurations/${device.id}`,
+          `https://webexapis.com/v1/deviceConfigurations?deviceId=${device.id}`,
           signageData,
           patchConfig
         )

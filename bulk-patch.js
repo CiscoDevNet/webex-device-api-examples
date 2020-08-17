@@ -107,7 +107,7 @@ getDevices(`https://webexapis.com/v1/devices${devicesQuery}`).then(
       `\nApplying ${bulkSettings.length} settings to ${devices.length} devices...`
     );
     devices.forEach((device) => {
-      const url = `https://webexapis.com/v1/deviceConfigurations/${device.id}`;
+      const url = `https://webexapis.com/v1/deviceConfigurations?deviceId=${device.id}`;
       const body = JSON.stringify(bulkSettings);
       patchDevice(device, url, body, 2);
     });
