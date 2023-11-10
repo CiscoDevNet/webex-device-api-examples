@@ -4,7 +4,7 @@
   "description": "examples for Webex Devices APIs",
   "main": "search.js",
   "dependencies": {
-    "axios": "^0.21.2",
+    "axios": "^1.6.0",
     "parse-link-header": "^2.0.0"
   },
   "devDependencies": {
